@@ -47,7 +47,7 @@
       return res.status(400).json({ error: 'Missing business name or URL' });
     }
 
-    // TODO: replace stub with real Google Business Profile call
+    // Mock – docelowo tu podłączymy prawdziwy audyt
     const mockedScore = 62;
 
     return res.status(200).json({
