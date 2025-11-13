@@ -1,4 +1,4 @@
- const { google } = require('googleapis');
+  const { google } = require('googleapis');
   const fetch = require('node-fetch');
 
   function parseBody(req) {
@@ -47,7 +47,7 @@
       return res.status(400).json({ error: 'Missing business name or URL' });
     }
 
-    // Mock – docelowo tu podłączymy prawdziwy audyt
+    // Tutaj nadal mock. Później podmienimy na realne dane z Google.
     const mockedScore = 62;
 
     return res.status(200).json({
